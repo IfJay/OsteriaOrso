@@ -1,0 +1,50 @@
+/* CLASS ON USER INPUT */
+/* NAVBAR */
+.navbar-OP{
+  background-color: rgba(0,0,0,0.7);
+}
+/* HAMBURGER ANIMATION */
+.animated-icon2.open span:nth-child(1) {
+top: 11px;
+width: 0%;
+left: 50%;
+}
+.animated-icon2.open span:nth-child(2) {
+transform: rotate(45deg);
+}
+.animated-icon2.open span:nth-child(3) {
+transform: rotate(-45deg);
+}
+.animated-icon2.open span:nth-child(4) {
+top: 11px;
+width: 0%;
+left: 50%;
+}
+/* POP-UP NAVBAR */
+.godown {
+  top: 0px;
+  transition: 0.5s ease;
+}
+/* OVERLAY */
+.overlay.open {
+  width: 100%;
+}
+.body.open{
+  overflow: hidden;
+}
+.overlay.open a {
+  transition: 0.5s ease;
+  transition-delay: 0.3s;
+  opacity: 1;
+}
+.nascondi {
+  display: none;
+}
+/* MENU */
+.sezione-under {
+  text-decoration: underline;
+}
+/* ACTIVE LINKS */
+.active {
+  color: white!important;
+}

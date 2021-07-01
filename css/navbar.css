@@ -1,0 +1,96 @@
+/* NAVBAR */
+.navbar{
+  background-color: rgba(0,0,0,0);
+  margin-top: 30px;
+}
+.navbar-toggler {
+  height: 40px;
+  border-color: rgba(255,255,255,0)!important;
+  background-color: black;
+  outline: none!important;
+}
+.navbar-collapse a {
+  color: rgb(255,255,255,0.7);
+}
+.links {
+  border-bottom: rgb(255,255,255,0.7) 3px solid;
+  border-radius: 10px;
+}
+.nav-link:hover {
+  color: white!important;
+}
+.logo {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+/* HAMBURGHER MENU */
+.animated-icon2 {
+  width: 30px;
+  height: 25px;
+  position: relative;
+  margin: 0px;
+  transform: rotate(0deg);
+  transition: .5s ease-in-out;
+  cursor: pointer;
+}
+.animated-icon2 span {
+  display: block;
+  background-color: white;
+  height: 3px;
+  width: 30px;
+  margin-bottom: 5px;
+  transform: rotate(0deg);
+  position: absolute;
+  left: 0;
+  opacity: 1;
+  transition: 0.3s ease;
+}
+.animated-icon2 span:nth-child(1) {
+  top: 0px;
+}
+.animated-icon2 span:nth-child(2), .animated-icon2 span:nth-child(3) {
+  top: 10px;
+}
+.animated-icon2 span:nth-child(4) {
+  top: 20px;
+}
+
+/* POP-UP NAVBAR */
+.pop-up {
+  background-color: #4c3b36 !important;
+  transition: 1.3s ease;
+  top: -100px;
+  margin-top: 0px!important;
+}
+.pop-up a {
+  color: #b29784;
+  padding: 5px;
+  transition: .3s ease;
+}
+
+/*EXTRAS + MEDIA */
+@media all and (max-width: 990px) {
+  .navbar {
+    position: fixed;
+    z-index: 4;
+    width: inherit;
+  }
+  .static {
+    width: auto;
+    margin-left: inherit;
+    margin-right: inherit;
+  }
+  .pop-up {
+    display: none;
+  }
+  .links {
+    border-bottom:0px solid;
+  }
+}
+@media all and (min-width: 990px) {
+  .logo {
+    display: none;
+  }
+}
